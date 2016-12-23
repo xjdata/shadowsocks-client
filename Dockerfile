@@ -1,4 +1,4 @@
-FROM apline:3.4
+FROM alpine:3.4
 
 
 ENV SS_VER 2.5.6
