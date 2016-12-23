@@ -33,8 +33,7 @@ ENV PASSWORD=
 ENV TIMEOUT     60
 
 
-EXPOSE $SERVER_PORT/tcp
-EXPOSE $SERVER_PORT/udp
+EXPOSE $LOCAL_PORT
 
 CMD ss-local  -s "$SERVER_ADDR" \
               -p "$SERVER_PORT" \
