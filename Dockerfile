@@ -42,6 +42,6 @@ CMD ss-local  -s "$SERVER_ADDR" \
               -m "$METHOD"      \
               -k "$PASSWORD"    \
               -t "$TIMEOUT"     \
-              -u                \
-              -A                \
+              #-u                \
+              #-A                \
               --fast-open
