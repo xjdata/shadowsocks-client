@@ -29,7 +29,7 @@ ENV SERVER_PORT 443
 ENV LOCAL_ADDR  0.0.0.0
 ENV LOCAL_PORT  1080
 ENV METHOD      aes-256-cfb
-ENV PASSWORD=
+ENV PASSWORD    helloworld
 ENV TIMEOUT     60
 
 
@@ -43,5 +43,5 @@ CMD ss-local  -s "$SERVER_ADDR" \
               -k "$PASSWORD"    \
               -t "$TIMEOUT"     \
               -u                \
-              -A                \
+              #-A                \
               --fast-open
