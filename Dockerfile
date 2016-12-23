@@ -31,7 +31,6 @@ ENV LOCAL_PORT  1080
 ENV METHOD      aes-256-cfb
 ENV PASSWORD=
 ENV TIMEOUT     60
-ENV DNS_ADDR    8.8.8.8
 
 
 EXPOSE $SERVER_PORT/tcp
@@ -44,7 +43,6 @@ CMD ss-local  -s "$SERVER_ADDR" \
               -m "$METHOD"      \
               -k "$PASSWORD"    \
               -t "$TIMEOUT"     \
-              -d "$DNS_ADDR"    \
               -u                \
               -A                \
-              --fast-open $OPTIONS
+              --fast-open
