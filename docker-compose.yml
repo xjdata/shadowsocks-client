@@ -5,10 +5,10 @@ services:
     ports:
       - "1080:1080"
     environment:
-      - SERVER_ADDR=your.server.ip.or.domain
+      - SERVER_ADDR=your.ss-server.ip.or.domain
       - SERVER_PORT=443
       - LOCAL_ADDR=0.0.0.0
       - LOCAL_PORT=1080
-      - PASSWORD=your.ss.server.set.password
+      - PASSWORD=your.ss-server.set.password
       - METHOD=aes-256-cfb
     restart: always
