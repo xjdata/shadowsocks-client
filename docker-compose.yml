@@ -1,7 +1,5 @@
 version: '2'
 services:
-# sudo docker-compose up -d  -p ss
-#
   ss-local:
     image: daocloud.io/xjdata/shadowsocks-client
     ports:
@@ -9,6 +7,8 @@ services:
     environment:
       - SERVER_ADDR=your.server.ip.or.domain
       - SERVER_PORT=443
+      - LOCAL_ADDR=0.0.0.0
+      - LOCAL_PORT=1080
       - PASSWORD=your.ss.server.set.password
       - METHOD=aes-256-cfb
     restart: always
