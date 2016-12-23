@@ -37,7 +37,7 @@ ENV DNS_ADDR    8.8.8.8
 EXPOSE $SERVER_PORT/tcp
 EXPOSE $SERVER_PORT/udp
 
-CMD ss-server -s "$SERVER_ADDR" \
+CMD ss-local  -s "$SERVER_ADDR" \
               -p "$SERVER_PORT" \
               -b "$LOCAL_ADDR"  \
               -l "$LOCAL_PORT"  \
