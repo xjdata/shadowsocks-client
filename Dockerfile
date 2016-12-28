@@ -33,7 +33,7 @@ ENV PASSWORD    helloworld
 ENV TIMEOUT     60
 
 
-#EXPOSE $LOCAL_PORT
+EXPOSE $LOCAL_PORT
 
 CMD ss-local  -s "$SERVER_ADDR" \
               -p "$SERVER_PORT" \
